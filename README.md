@@ -10,6 +10,7 @@ Completing a test assignment for an interview
 ![image](https://github.com/DTaSchweppes/flashlight-first-test-fastapi/assets/45369246/a49b823b-cb94-456e-b3b2-5ba37db42753)
 
 **По первой задаче был вопрос**
+
 ![image](https://github.com/DTaSchweppes/flashlight-first-test-fastapi/assets/45369246/61d7812a-8ec4-4184-a970-ee171b591f54)
 
 отсюда не ясно. Мы пишим колиент фонаря (а "сервер" представляем, что он есть и передает JSON) или что-то иначе.
