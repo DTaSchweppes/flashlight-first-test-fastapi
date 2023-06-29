@@ -1,6 +1,6 @@
 import subprocess
 import asyncio
-from app.flashlight_first import app
+from app.flashlight_two import app
 import uvicorn
 requirements_file = 'requirements.txt' # путь к файлу requirements.txt
 subprocess.check_call(['pip', 'install', '-r', requirements_file])  # Вызов pip для установки зависимостей
