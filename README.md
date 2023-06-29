@@ -24,3 +24,22 @@ Completing a test assignment for an interview
 
 потому сделал одну реализацию по пунктам из ТЗ + FastAPI
 >Так как нет сервера фонаря чтобы протестировать и подключиться по IP из ТЗ, тестов нет
+
+**Работа приложения:**
+
+Отправляется команда, обрабатывается и приходит ответ
+
+![image](https://github.com/DTaSchweppes/flashlight-first-test-fastapi/assets/45369246/a2e09d99-4e39-48ec-b7ce-64ab3adf1d4c)
+
+ответ в JSON:
+
+![image](https://github.com/DTaSchweppes/flashlight-first-test-fastapi/assets/45369246/4d3d71ad-343d-4624-b5c4-01f92cd951be)
+
+Есть проверка не был ли включен фонарь ранее:
+
+![image](https://github.com/DTaSchweppes/flashlight-first-test-fastapi/assets/45369246/5ad66298-d949-444b-bba3-83606400644c)
+
+
+По замене цвета так же:
+
+![image](https://github.com/DTaSchweppes/flashlight-first-test-fastapi/assets/45369246/f3a8dbdb-645c-4abe-9b45-3861be45915e)
