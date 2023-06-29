@@ -1,11 +1,8 @@
+from enum import Enum
+
 from fastapi import FastAPI, HTTPException
-import asyncio
-import json
 
 app = FastAPI()
-
-LIGHT_HOST = "127.0.0.1"  # IP фонаря
-LIGHT_PORT = 9999  # порт фонаря
 
 
 class FlashLight:
@@ -40,26 +37,6 @@ class FlashLight:
 
 LIGHT = FlashLight()
 
-async def send_command(command, metadata=None):
-    """
-    Функция для отправки команды на сервер фонаря
-    :param command:
-    :param metadata:
-    :return:
-    """
-    data = {
-        "command": command,
-        "metadata": metadata
-    }
-    message = json.dumps(data)
-
-    reader, writer = await asyncio.open_connection(LIGHT_HOST, LIGHT_PORT)
-    writer.write(message.encode())
-    await writer.drain()
-    writer.close()
-    await writer.wait_closed()
-
-
 @app.get("/light/{command}")
 async def control_light(command: str, metadata: str = None):
     global LIGHT
@@ -67,6 +44,4 @@ async def control_light(command: str, metadata: str = None):
         raise HTTPException(status_code=400, detail="Unknown command.")
     method_name = LIGHT.commands[command]
     method = getattr(LIGHT, method_name)
-    await send_command(method)
     return method(metadata)
-
