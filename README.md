@@ -22,10 +22,14 @@ Completing a test assignment for an interview
 
 ![image](https://github.com/DTaSchweppes/flashlight-first-test-fastapi/assets/45369246/b3c3b0b0-5f14-4aea-ac70-8c52209c655b)
 
-потому сделал одну реализацию по пунктам из ТЗ + FastAPI
+
+[Вариант который я сделал как понял по ответу от рекрутера (Серверную часть) [FastApi] [Asyncio]](https://github.com/DTaSchweppes/flashlight-first-test-fastapi/blob/master/app/flashlight_two.py)
+
+[Вариант реализации по пунктам из ТЗ, но при этом на FastApi подключение поверх подключения и т.д.](https://github.com/DTaSchweppes/flashlight-first-test-fastapi/blob/master/app/flashlight_first.py)
 >Так как нет сервера фонаря чтобы протестировать и подключиться по IP из ТЗ, тестов нет
 
-**Работа приложения:**
+
+**Работа приложения (1 вариант):**
 
 Отправляется команда, обрабатывается и приходит ответ
 
